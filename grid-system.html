@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Grid System</title>
+
+    <style>
+         body {
+             margin-bottom: 400px;
+         }
+        /* View like bootstrap website */
+        h4 {margin: 30px 20px}
+        .bd-example { 
+            padding: 1.5rem;  
+            border-width: 1px;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+            margin: 1rem;
+            border: solid #dee2e6;
+            border-width: 1px;
+        }
+        .bd-example::after {
+            display: block;
+            clear: both;
+            content: "";
+        }
+        
+        .bd-example-row .row > .col,
+        .bd-example-row .row > [class^="col-"] {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            /* background-color: rgba(39, 41, 43, 0.03); */
+            border: 1px solid rgba(39, 41, 43, 0.1);
+            background-color: rgba(255,0,0,0.1);
+            /* height: 200px; */
+        }
+
+        /*.bd-example-row .container, */
+        .bd-example-row .row+.row {
+            margin-top: 1rem;
+        }
+ 
+    </style>
+  </head>
+  <body>
+    
+    <h4>Equal-width - Eşit genişlik</h4>
+    <div class="bd-example bd-example-row">
+
+        <div class="container"> 
+            <div class="row">
+                <div class="col">Column 1</div>
+                <div class="col">Column 2</div> 
+            </div> 
+
+            <div class="row">
+                <div class="col">Column 1</div>
+                <div class="col">Column 2</div> 
+                <div class="col">Column 3</div> 
+            </div> 
+
+            <div class="row">
+                <div class="col">Column 1</div>
+                <div class="col">Column 2</div> 
+                <div class="col">Column 3</div> 
+                <div class="col">Column 4</div> 
+                <div class="col">Column 5</div> 
+                <div class="col">Column 6</div> 
+            </div> 
+        </div> 
+
+    </div>
+
+
+    <h4>Setting one column width - Bir sütun genişliğini ayarlama</h4>
+    <div class="bd-example bd-example-row">
+
+        <div class="container">  
+            <div class="row">
+                <div class="col-4">Column 1</div>
+                <div class="col-8">Column 2</div>  
+            </div> 
+
+            <div class="row">
+                <div class="col">Column 1</div>
+                <div class="col-6">Column 2</div> 
+                <div class="col">Column 3</div> 
+            </div> 
+
+            <div class="row">
+                <div class="col-2">Column 1</div>
+                <div class="col-4">Column 2</div> 
+                <div class="col-6">Column 3</div> 
+            </div> 
+  
+        </div> 
+
+    </div>
+
+
+    <h4>Variable width content - İçeriğe Göre Genişlik</h4>
+    <div class="bd-example bd-example-row">
+
+        <div class="container">   
+
+            <div class="row justify-content-md-center">
+                <div class="col-3">Column 1</div>
+                <div class="col-md-auto">Variable width content</div> 
+                <div class="col-3">Column 3</div> 
+            </div>  
+        </div> 
+
+    </div>
+
+    <h4>All breakpoints</h4>
+    <div class="bd-example bd-example-row">  
+        <div class="container">
+            <div class="row">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+            <div class="row">
+                <div class="col-8">col-8</div>
+                <div class="col-4">col-4</div>
+            </div>
+        </div>
+    </div>
+
+
+    <h4>Stacked to horizontal</h4>
+    <div class="bd-example bd-example-row">  
+        <div class="container">  
+            <div class="row">
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">col-sm-6</div>
+                <div class="col-sm-6">col-sm-6</div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8">col-sm-8</div>
+                <div class="col-sm-4">col-sm-4</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">col-md-8</div>
+                <div class="col-md-4">col-md-4</div>
+            </div>
+ 
+            <div class="row">
+                <div class="col-md-6 col-lg-4">content 1 </div>
+                <div class="col-md-6 col-lg-4">content 2 </div> 
+                <div class="col-md-6 col-lg-4">content 3 </div> 
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-4">content 1 </div>
+                <div class="col-md-6 col-lg-4">content 2 </div> 
+                <div class="col-md-6 col-lg-4">content 3 </div> 
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-xl-3">content 1 </div>
+                <div class="col-md-6 c col-xl-3">content 2 </div> 
+                <div class="col-md-6 col-xl-3">content 3 </div> 
+                <div class="col-md-6 c col-xl-3">content 4 </div> 
+            </div>
+ 
+        </div>
+    </div>
+
+    <h4>Nesting</h4>
+    <div class="bd-example bd-example-row">  
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">col-4</div>
+                <div class="col-md-8"> col-8
+
+                    <div class="row">
+                        <div class="col-6">content 1</div>
+                        <div class="col-6">content 2</div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">content 1</div>
+                        <div class="col-lg-4">content 2</div>
+                        <div class="col-lg-4">content 3</div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </div>
+   
+
+    <!-- Bootstrap Bundle with Popper --> 
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

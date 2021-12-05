@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Column</title>
+
+    <style>
+        
+        /* View like bootstrap5.com website */
+        h3 {margin: 30px 20px}
+        .bd-example { 
+            padding: 1.5rem;  
+            border-width: 1px;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+            margin: 1rem;
+            border: solid #dee2e6;
+            border-width: 1px;
+        }
+        .bd-example::after {
+            display: block;
+            clear: both;
+            content: "";
+        }
+        
+        .bd-example-row .row > .col,
+        .bd-example-row .row > [class^="col-"] {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            background-color: rgba(39, 41, 43, 0.03);
+            border: 1px solid rgba(39, 41, 43, 0.1); 
+        }
+        .bd-example-row .row+.row {
+            margin-top: 1rem;
+        }
+        
+        .bd-example-row-flex-cols .row {
+            min-height: 10rem;
+            background-color: rgba(255,0,0,0.1);
+        }
+    </style>
+  </head>
+  <body>
+    
+    <h3>Equal-width - Eşit genişlik</h3>
+    <div class="bd-example bd-example-row bd-example-row-flex-cols">
+    <div class="container">
+        <div class="row align-items-start">
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        </div>
+        <div class="row align-items-center">
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        </div>
+        <div class="row align-items-end">
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col align-self-start">
+            One of three columns
+        </div>
+        <div class="col align-self-center">
+            One of three columns
+        </div>
+        <div class="col align-self-end">
+            One of three columns
+        </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+    <!-- Bootstrap Bundle with Popper --> 
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
